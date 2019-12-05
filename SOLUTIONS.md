@@ -9,7 +9,9 @@ Corrections
 
 * Export `router` from the `route` file and connect it to the `index` using `app.use`
 
-* In he `EventController` Change `Event.make` on line 37 to a Mongoose method, `Event.create` because that's the method needed to add new event entries into the `db`
+* In the `EventController` Change `Event.make` on line 37 to a Mongoose method, `Event.create` because that's the method needed to add new event entries into the `db`
+
+* On line 33 of `EventController` change the `statusCode` to `409` to signify conflict, since an event already exist for the set date
 
 * On line 39 of `EventController` change the `statusCode` from `500` to `201` because its the code that corresponds to the action performed which is `created`
 

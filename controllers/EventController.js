@@ -30,7 +30,7 @@ module.exports = {
 
 
     if (existingEvent) {
-      return res.status(500).json({
+      return res.status(409).json({
         success: false,
         message: 'An Event already exist at this venue on this day',
       });
