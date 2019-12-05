@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Orlayhemmy/Tracker-API.svg?branch=master)](https://travis-ci.com/Orlayhemmy/Tracker-API)
+
 # Code Test Brickbase
 
 This repository contains code written in NodeJS with errors, bug and incorrect code practice. Your tasks are to:
