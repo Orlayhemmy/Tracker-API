@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/Orlayhemmy/Tracker-API.svg?branch=master)](https://travis-ci.com/Orlayhemmy/Tracker-API)
-
+[![Coverage Status](https://coveralls.io/repos/github/Orlayhemmy/Tracker-API/badge.svg?branch=master)](https://coveralls.io/github/Orlayhemmy/Tracker-API?branch=master)
 # Code Test Brickbase
 
 This repository contains code written in NodeJS with errors, bug and incorrect code practice. Your tasks are to:
