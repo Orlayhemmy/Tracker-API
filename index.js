@@ -1,8 +1,9 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 
+const { dbStart } = require('./dbConnection/index')
 const eventRoutes = require('./routes/events');
+
 const app = express()
 
 app.use(cors());
@@ -13,6 +14,8 @@ app.use(
     extended: true,
   }),
 );
+
+dbStart.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.use('/', eventRoutes);
 
