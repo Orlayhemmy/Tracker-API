@@ -5,7 +5,7 @@ const { dbOff, flushCollections } = require('../dbConnection')
 beforeAll(() => flushCollections())
 afterAll(() => dbOff());
 
-describe('Post Endpoints', () => {
+describe('Event Endpoints', () => {
   it('should create a new event', async () => {
     const res = await request(app)
       .post('/')
@@ -27,7 +27,7 @@ describe('Post Endpoints', () => {
     expect(res.body.event).not.toEqual(null)
   })
 
-  it('should get all post', async () => {
+  it('should get all events', async () => {
     const res = await request(app)
       .get('/')
     expect(res.status).toEqual(200)
